@@ -32,7 +32,7 @@ export default function Home() {
                             <span className="text-[#00C97A] [text-shadow:0_0_8px_#00C97A]">LET'S </span>
                             <span className="text-[#ff006a] [text-shadow:0_0_12px_#ff006a]">CONNECT</span>
                         </h1>
-                        <h1 className="font-bold text-white text-5xl py-4 max-w-200">Let's build something amazing together</h1>
+                        <h1 className="font-bold text-white text-5xl py-4 max-w-200">Let's build the tool you need</h1>
                         <p className="text-white/60 py-3 max-w-200 text-lg">I'm always open to discussing new projects, creative ideas, or to bring your ideas to life. </p>
 
                         <div className="flex flex-col py-8 divide-y divide-white/20">
