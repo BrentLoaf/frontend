@@ -55,7 +55,7 @@ export default function Home() {
             <h1 className="text-white/60">Take a closer look at the projects I've worked on and learn more about me as a developer.</h1>
             <div className="flex flex-row justify-start items-center pt-8 px-18">
               {/* <Button variant="glow" className="!px-10 !py-3" wrapperClassName="!px-10">See My Work ➜</Button> */}
-              <Button variant="glow" className="!px-10 !py-3" wrapperClassName="!px-10" color="#ff006a" onClick={() => router.push("/pages/contacts")}>About Me ➜</Button>
+              <Button variant="glow" className="!px-10 !py-3" wrapperClassName="!px-10" color="#ff006a" onClick={() => router.push("/pages/about")}>About Me ➜</Button>
             </div>
           </Card>
         </div>
