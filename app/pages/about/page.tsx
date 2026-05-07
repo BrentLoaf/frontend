@@ -178,7 +178,7 @@ export default function Home() {
                         <div className="pr-6">
                             <div className="max-w-[2px] min-w-[2px] min-h-10 bg-[#00C97A80]" />
                         </div>
-                        <h1 className="font-bold text-white text-3xl max-w-200">Experiance Highlights</h1>
+                        <h1 className="font-bold text-white text-3xl max-w-200">Experience Highlights</h1>
                     </div>
 
                     <div className="min-h-[120px] flex divide-x divide-white/20 pb-8 flex justify-center flex-wrap gap-10">
@@ -186,6 +186,12 @@ export default function Home() {
                             <div className="w-40 min-h-[120px] justify-center text-center">
                                 <h1 className="font-bold text-5xl text-[#00C97A] [text-shadow:0_0_8px_#00C97A80]">9+</h1>
                                 <p className="py-3 text-white">years programming experience</p>
+                            </div>
+                        </div>
+                        <div className="pr-6">
+                            <div className="w-40 min-h-[120px] justify-center text-center">
+                                <h1 className="font-bold text-5xl text-[#00C97A] [text-shadow:0_0_8px_#00C97A80]">5+</h1>
+                                <p className="py-3 text-white">languages I can work with</p>
                             </div>
                         </div>
                         <div className="px-6">

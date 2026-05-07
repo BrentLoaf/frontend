@@ -38,8 +38,8 @@ export default function Home() {
             </div>
             <div className="px-6">
               <div className="w-40 min-h-[120px] justify-center text-center">
-                <h1 className="font-bold text-5xl text-[#00C97A] [text-shadow:0_0_8px_#00C97A80]">200K+</h1>
-                <p className="py-3 text-white">lines of code across multiple languages</p>
+                <h1 className="font-bold text-5xl text-[#00C97A] [text-shadow:0_0_8px_#00C97A80]">5+</h1>
+                <p className="py-3 text-white">languages I can work with</p>
               </div>
             </div>
             <div className="px-6">
