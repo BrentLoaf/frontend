@@ -1,8 +1,11 @@
 import type { NextConfig } from "next";
 
+const repoName = "frontend"; // change if your repo name is different
+
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/frontend",
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}/`,
   images: {
     unoptimized: true
   }
