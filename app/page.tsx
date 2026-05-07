@@ -1,65 +1,65 @@
-import Image from "next/image";
+"use client";
+
+import Card from "./custom/Card";
+import Button from "./custom/Button";
+import Underline from "./custom/Underline";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <>
+      <div className="flex flex-col justify-start">
+        <div className="p-20 px-35 flex flex-col justify-start">
+          <h1 className="text-2xl">
+            <span className="text-[#00C97A] [text-shadow:0_0_8px_#00C97A]">JAVA </span>
+            <span className="text-[#ff006a] [text-shadow:0_0_12px_#ff006a]">DEVELOPER</span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+          <h1 className="font-bold text-5xl py-4 max-w-200">
+            <span className="text-white">Developing </span>
+            <span className="text-[#00C97A] [text-shadow:0_0_8px_#00C97A80]">scalable </span>
+            <span className="text-white">business software, from internal tools to  </span>
+            <span className="text-[#ff006a] [text-shadow:0_0_12px_#ff006a80]">client-facing applications. </span>
+          </h1>
+          <p className="text-white/60 py-3">I focus on building reliable, maintainable systems that are designed for real-world use, not just prototypes.</p>
+          <div className="min-h-[120px] flex divide-x divide-white/20 py-8">
+            <div className="pr-6">
+              <div className="w-40 min-h-[120px] justify-center text-center">
+                <h1 className="font-bold text-5xl text-[#00C97A] [text-shadow:0_0_8px_#00C97A80]">9+</h1>
+                <p className="py-3 text-white">years programming experience</p>
+              </div>
+            </div>
+            <div className="px-6">
+              <div className="w-40 min-h-[120px] justify-center text-center">
+                <h1 className="font-bold text-5xl text-[#00C97A] [text-shadow:0_0_8px_#00C97A80]">20+</h1>
+                <p className="py-3 text-white">projects finished across domains</p>
+              </div>
+            </div>
+            <div className="px-6">
+              <div className="w-40 min-h-[120px] justify-center text-center">
+                <h1 className="font-bold text-5xl text-[#00C97A] [text-shadow:0_0_8px_#00C97A80]">200K+</h1>
+                <p className="py-3 text-white">lines of code across multiple languages</p>
+              </div>
+            </div>
+            <div className="px-6">
+              <div className="w-40 min-h-[120px] justify-center text-center">
+                <h1 className="font-bold text-5xl text-[#00C97A] [text-shadow:0_0_8px_#00C97A80]">98%+</h1>
+                <p className="py-3 text-white">positive client feedback</p>
+              </div>
+            </div>
+          </div>
+          <Card wrapperClassName="pl-0 pt-1" className="shadow-[0_0_15px_#00C97A70] flex flex-col justify-center items-center" borderColor="#00C97A" color="#00C97A12">
+            <h1 className="font-bold text-white text-3xl">What to learn more about me and my work?</h1>
+            <Underline color="#ff006a" />
+            <h1 className="text-white/60">Take a closer look at the projects I've worked on and learn more about me as a developer.</h1>
+            <div className="flex flex-row justify-start items-center pt-8 px-18">
+              {/* <Button variant="glow" className="!px-10 !py-3" wrapperClassName="!px-10">See My Work ➜</Button> */}
+              <Button variant="glow" className="!px-10 !py-3" wrapperClassName="!px-10" color="#ff006a" onClick={() => router.push("/pages/contacts")}>About Me ➜</Button>
+            </div>
+          </Card>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </div >
+    </>
   );
 }
