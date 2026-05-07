@@ -1,14 +1,7 @@
 import type { NextConfig } from "next";
 
-const repoName = "frontend";
-
 const nextConfig: NextConfig = {
-  output: "export",
-  basePath: `/${repoName}`,
-  assetPrefix: `/${repoName}/`,
-  images: {
-    unoptimized: true
-  }
+  output: "export"
 };
 
 export default nextConfig;

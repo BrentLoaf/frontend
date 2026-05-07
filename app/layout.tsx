@@ -12,7 +12,7 @@ export default function RootLayout({
       <body className="relative min-h-screen overflow-x-hidden">
         <div
           className="fixed inset-0 bg-cover bg-center z-0"
-          style={{ backgroundImage: `url("/frontend/bg.png")` }}
+          style={{ backgroundImage: `url("bg.png")` }}
         />
         <div className="fixed inset-0 bg-gradient-to-r from-black via-black/75 to-black/25 pointer-events-none z-10" />
         <div className="relative min-h-screen flex flex-col z-20">
